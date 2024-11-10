@@ -1,0 +1,63 @@
+body {
+    background-color: #f0f0f0;
+}
+#letsPlay {
+    text-align: center;
+}
+
+#mashTitle {
+    color: orange;
+}
+
+#gameTitle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+
+td {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#spiralDiv {
+    text-align: center;
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+.play_div {
+    text-align: center;
+    margin: 50px;
+}
+
+.question_box {
+    text-align: center;
+    margin: 25px;
+}
+
+.tableDiv {
+   display: flex;
+   justify-content: center;
+}
+
+table, tr, th, td {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+.try {
+    color: blue;
+}
+
+.colorTheBack {
+    background-color: orange;
+}
+

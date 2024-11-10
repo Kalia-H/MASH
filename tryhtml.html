@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>MASH</title>
+    <link rel="stylesheet" type="text/css" href="try.css">
+</html>
+
+<body>
+    <h1 id="letsPlay">Let's Play: <span id="mashTitle">MASH</span></h1>
+    <div>
+        <table id = "gameTitle">
+            <tr>
+                <th>M </th>
+                <th>A </th>
+                <th>S </th>
+                <th>H </th>
+            </tr>
+
+            <tr>
+                <td>a </td>
+                <td>p </td>
+                <td>h </td>
+                <td>o </td>
+            </tr>
+
+            <tr>
+                <td>n </td>
+                <td>a </td>
+                <td>a </td>
+                <td>u </td>
+            </tr>
+
+            <tr>
+                <td>s </td>
+                <td>r </td>
+                <td>c </td>
+                <td>s </td>
+            </tr>
+
+            <tr>
+                <td>i </td>
+                <td>t </td>
+                <td>k </td>
+                <td>e </td>
+            </tr>
+
+            <tr>
+                <td>o </td>
+                <td>m </td>
+                <td>  </td>
+                <td>  </td>
+            </tr>
+
+            <tr>
+                <td>n </td>
+                <td>e </td>
+                <td>  </td>
+                <td>  </td>
+            </tr>
+
+            <tr>
+                <td>  </td>
+                <td>n </td>
+                <td>  </td>
+                <td>  </td>
+            </tr>
+
+            <tr>
+                <td>  </td>
+                <td>t </td>
+                <td>  </td>
+                <td>  </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="spiralDiv" >
+        <p class="hidden" id="spiralText">Click 'Start' to start the spiral. Click 'Stop' to stop the spiral.</p>
+        <canvas class = "hidden" id="myCanvas" width="200" height="150"></canvas>
+        <button onclick="drawSpiral()" class = "hidden" id="sButton">START</button>
+        <button onclick="stoptheS()" id="sStopB" class="hidden">STOP</button>
+        <p class="hidden" id="countOutput"></p>
+    </div>
+    
+    <div class="play_div">
+        <label id="playlabel" for="play_" >Ready to Play? </label>
+        <button id="play_" onclick="play_b()" >Play</button>
+    </div>
+    
+    <div class="question_box">
+        <p id="gboard_q"></p>
+        <button id="1question_button"></button>
+    </div>
+
+    <div class = "question_box">
+        <p id="gboard_q2"></p>
+        <button id="question_button"></button>
+    </div>
+
+    <div class="tableDiv">
+        <table>
+            <tr>
+                <th>
+                    Cars
+                </th>
+            </tr>
+            <tr>
+                <td id="car_1"></td>
+            </tr>
+
+            <tr>
+                <td id="car_2"></td>
+            </tr>
+
+            <tr>
+                <td id="car_3"></td>
+            </tr>
+
+            <tr >
+                <td id="car_4">
+                    
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>
+                    Places
+                </th>
+            </tr>
+            <tr>
+                <td id="place_1">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td id="place_2">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td id="place_3">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td id="place_4">
+                    
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>
+                    Kids
+                </th>
+            </tr>
+
+            <tr>
+                <td id="kid_1">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td id="kid_2">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td id="kid_3">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td id="kid_4">
+                    
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th>
+                    Pets
+                </th>
+            </tr>
+                
+            <tr>
+                <td id="pet_1">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td id="pet_2">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td id="pet_3">
+                    
+                </td>
+            </tr>
+
+            <tr>
+                <td id="pet_4">
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="try.js"></script>
+    <script src="game.js"></script>
+</body>
