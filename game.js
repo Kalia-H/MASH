@@ -26,55 +26,29 @@ function getNewNumber(number) {
 }
 
 function crossOffCar(newNumber){
-    console.log('New Number is equal to: ', newNumber);
+    const firstCar = document.getElementById('car_1');
+    const secondCar = document.getElementById('car_2');
+    const thirdCar = document.getElementById('car_3');
+    const fourthCar = document.getElementById('car_4');
+
     if(newNumber == 0) {
         console.log('Car named: ', carList[newNumber]);
+        firstCar.classList.add('crossOff');
     }else if(newNumber == 1) {
         console.log('Car named: ', carList[newNumber]);
+        secondCar.classList.add('crossOff');
     }else if(newNumber == 2) {
         console.log('Car named: ', carList[newNumber]);
+        thirdCar.classList.add('crossOff');
     }else if(newNumber == 3) {
         console.log('Car named: ', carList[newNumber]);
+        fourthCar.classList.add('crossOff');
     }else {
         console.log('Error in crossOffCar()');
     };
-    for (let i = 0; i <= newNumber; i++) { 
-        const firstCar = document.getElementById('car_1');
-        const secondCar = document.getElementById('car_2');
-        const thirdCar = document.getElementById('car_3');
-        const fourthCar = document.getElementById('car_4');
     
-        if (firstCar && secondCar && thirdCar && fourthCar) { 
-            setTimeout(() => {
-                firstCar.classList.add('colorTheBack');
-                setTimeout(() => {
-                    firstCar.classList.remove('colorTheBack');
-                }, 1000); // 1-second delay for removing class
     
-                setTimeout(() => {
-                    secondCar.classList.add('colorTheBack');
-                    setTimeout(() => {
-                        secondCar.classList.remove('colorTheBack');
-                    }, 500);
-                }, 1000); // 2-second delay before starting next car
     
-                setTimeout(() => {
-                    thirdCar.classList.add('colorTheBack');
-                    setTimeout(() => {
-                        thirdCar.classList.remove('colorTheBack');
-                    }, 500);
-                }, 1500); // 4-second delay before starting next car
     
-                setTimeout(() => {
-                    fourthCar.classList.add('colorTheBack');
-                    setTimeout(() => {
-                        fourthCar.classList.remove('colorTheBack');
-                    }, 500);
-                }, 2000); // 6-second delay before starting next car
-            }, i * 3000); // Stagger each iteration by 8 seconds to account for all timings
-        } else { 
-            console.error('One or more elements not found'); 
-        } 
-    };
     
 }

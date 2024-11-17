@@ -1,3 +1,7 @@
+carList = [];
+placeList = [];
+kidList = [];
+petList = [];
 
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
@@ -7,6 +11,7 @@ const a = 0;
 const b = 1;
 let ab = 1;
 let lineCount = 0;
+
 
 ctx.translate(width / 2, height / 2); // Move the origin to the center of the canvas
 
@@ -43,11 +48,10 @@ function drawSpiral() {
 
 function stoptheS() {
     
-    console.log('Line count: ' , lineCount); 
     ab = 0;
     getButton = document.getElementById('sStopB').classList.add('hidden');
     outputTheLine = document.getElementById('countOutput').classList.remove('hidden');
-    newLcount = Math.floor(lineCount / 2);
+    newLcount = Math.floor(lineCount / 3);
     outputLineC = document.getElementById('countOutput').innerHTML = 'Your number is: ' + newLcount;
 
     getNewNumber(newLcount);
@@ -60,7 +64,7 @@ function showCanvas() {
     let showT = document.getElementById('spiralText').classList.remove('hidden');
     canvasB.classList.remove('hidden');
 }
-petList = [];
+
 function get_pets() {
     pp1 = document.getElementById('gboard_q');
     ps1 = document.createTextNode('Enter the first pet: ');
@@ -155,7 +159,7 @@ function get_pets() {
         })
     })
 }
-kidList = [];
+
 function get_kids() {
     const pk1 = document.getElementById('gboard_q');
     const s1 = document.createTextNode('How many kids will you have? Enter first answer: ');
@@ -251,7 +255,7 @@ function get_kids() {
         })
     })
 }
-placeList = [];
+
 function get_places() {
     const place_space = document.getElementById('gboard_q');
     const place_s_ques = document.createTextNode('Name your first place: ');
@@ -350,7 +354,7 @@ function get_places() {
 
     })
 }
-let carList = [];
+
 function get_cars() {
     
     let car_space = document.getElementById('gboard_q');

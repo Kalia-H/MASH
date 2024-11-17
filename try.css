@@ -4,7 +4,6 @@ body {
 #letsPlay {
     text-align: center;
 }
-
 #mashTitle {
     color: orange;
 }
@@ -57,7 +56,7 @@ tr:nth-child(even) {background-color: #f2f2f2;}
     color: blue;
 }
 
-.colorTheBack {
-    background-color: orange;
+.crossOff {
+    text-decoration: line-through;
 }
 
